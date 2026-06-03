@@ -8,7 +8,7 @@
 
 ### @latest - It is used to download the latest version of the package
 
-## When the build command is executed in the powershell , npm will be talking to the registry to download the latest Vite templates, choosing of framework and compiler will happen . Then , the template files will be added to the Home folder.
+### When the build command is executed in the powershell , npm will be talking to the registry to download the latest Vite templates, choosing of framework and compiler will happen . Then , the template files will be added to the Home folder.
 
-## Package.json will tell about the version , file name literally it is blueprint of the folder.
-## Dependencies show the react or anyother cmd's are installed
+### Package.json will tell about the version , file name literally it is blueprint of the folder.
+### Dependencies show the react or anyother cmd's are installed
