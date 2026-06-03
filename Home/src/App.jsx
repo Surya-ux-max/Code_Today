@@ -1,16 +1,16 @@
-
-
-
 function App(){
-  const greet = () => {
-    return "Hello Suryaprakash"}; // Since javascript is used in the printing of the string, we need to use the return statement to return the string from the function. Otherwise, it will not work and will throw an error.
-  return(
+  const name = "Suryaprakash";
+  const age = 22;
+  const designation = "Student";
+  const College = "Sri Eshwar College of Engineering";
+  return (
     <div>
-      <h1>{greet()}</h1>
+      <h1>{name}</h1>
+      <p>Age: {age}</p>
+      <p>Designation: {designation}</p>
+      <p>College: {College}</p>
     </div>
   );
 }
-// dont forget to add the div tag to wrap the h1 and p tags, otherwise it will throw an error because a component can only return one element.
+
 export default App;
-
-
