@@ -12,3 +12,4 @@
 
 ### Package.json will tell about the version , file name literally it is blueprint of the folder.
 ### Dependencies show the react or anyother cmd's are installed
+
