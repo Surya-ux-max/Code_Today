@@ -5,6 +5,7 @@ import './styles/global.css'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import Features from './components/Features.jsx'
+import MacbookScrollDemo from './components/macbook-scroll-demo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,5 +13,6 @@ createRoot(document.getElementById('root')).render(
     <Navbar />
     <Hero />
     <Features />
-  </StrictMode>,
+    <MacbookScrollDemo />
+  </StrictMode>
 )
