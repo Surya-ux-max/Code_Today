@@ -1,18 +1,98 @@
-# React + Vite
+# Code Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Base Page Template
+<div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-600 to-orange-400 flex items-center justify-center p-6">
+<div className="w-full max-w-4xl bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 shadow-2xl p-8">
 
-Currently, two official plugins are available:
+### - Text Inline CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<h1 className="text-5xl font-bold text-white">
 
-## React Compiler
+### Understanding Each Class
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+min-h-screen - makes the section cover the entire screen height 
 
-Note: This will impact Vite dev & build performances.
+### bg-gradient-to-br 
 
-## Expanding the ESLint configuration
+Creates a gradient from top-left to bottom-right.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Gradient Colors
+
+from-purple-900
+via-pink-600
+to-orange-400
+
+### Center Everything
+
+flex items-center justify-center
+
+### Responsive Padding
+
+p-6  - Adds space around the content.
+
+### Glass Container 
+
+Width
+w-full
+max-w-4xl
+
+Responsive width.
+
+Glass Effect
+bg-white/10
+
+10% white transparency.
+
+backdrop-blur-lg
+
+Blurs the background behind the card.
+
+Rounded Corners
+rounded-3xl
+
+Modern rounded design.
+
+Border
+border border-white/20
+
+Soft transparent border.
+
+Shadow
+shadow-2xl
+
+Premium floating effect.
+
+
+## Re usable Component 
+
+
+export default function PageTemplate({ children }) {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-600 to-orange-400 flex items-center justify-center p-6">
+      <div className="w-full max-w-4xl bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 shadow-2xl p-8">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+## Master Template
+
+min-h-screen
+bg-gradient-to-br
+from-slate-950
+via-violet-900
+to-indigo-700
+flex
+items-center
+justify-center
+p-6
+
+### and 
+
+bg-white/10
+backdrop-blur-xl
+border
+border-white/20
+rounded-3xl
+shadow-2xl
